@@ -1,0 +1,71 @@
+/* 전체 배경 색과 기본 텍스트 색상 설정 */
+body {
+    background-color: #1B1F3B;
+    color: #ecf0f1; /* 텍스트 색상 (흰색에 가까운 색상) */
+    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+    margin: 0;
+    padding: 0;
+    padding: 0 20px;  /* 좌우 20px 여백 */
+    max-width: 100%;  /* 화면 너비에 맞게 조정 */
+    box-sizing: border-box; /* 패딩을 포함한 크기 조정 */
+}
+
+/* 책 제목 스타일 */
+h1 {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 각 항목에 대한 스타일 */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    word-wrap: break-word;  /* 텍스트가 길어지면 자동 줄바꿈 */
+    line-height: 1.6;
+    margin-bottom: 20px;  /* 각 p 태그의 아래쪽 여백 */
+
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* ':' 앞에 있는 글자들을 굵고, 색을 넣는 스타일 */
+p strong {
+    color: #3498db; 
+    font-weight: bold;
+}
+
+
+/* 감상평 그림에 대한 스타일 */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* 돌아가기 버튼 스타일 */
+a.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2980b9; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.back-button:hover {
+    background-color: #1f618d; /* 버튼 호버시 색상 */
+}

@@ -1,0 +1,86 @@
+/* 기본 스타일 초기화 */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 페이지 전체 배경과 텍스트 색상 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #1B1F3B;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* 목차 섹션 스타일 */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #1B1F3B;
+	text-align: center;
+}
+
+
+/* 책 링크 스타일 */
+/* .book-list를 수평으로 정렬 */
+.book-list {
+    display: flex;
+    justify-content: center; /* 버튼들을 가로로 중앙 정렬 */
+    gap: 10px; /* 버튼 간 간격*/
+}
+
+/*세로로 텍스트를 회전 */
+.book-link {
+    display: flex;
+    justify-content: flex-start; /* 회전된 기준에서 위쪽 정렬 */
+    align-items: center; /* 좌우 중앙 정렬 */
+    padding-top: 10px; /* 여백 조절 */
+    width: 60px;
+    height: 300px;
+    background: linear-gradient(to right, #1B1F3B 5%, #2C3E50 10%, #3B5998 50%, #2C3E50 90%, #1B1F3B);
+    border-left: 8px solid #141A2E; /* 책의 두께 */
+    border-right: 1px solid #0F1626;
+    color: white;
+    text-decoration: none;
+    border-radius: 2.5px;
+    font-weight: bold;
+    font-size: 1rem;
+    writing-mode: vertical-rl; /* 텍스트 세로 정렬 */
+    text-align: start; /* 텍스트를 위쪽부터 정렬 (책등처럼) */
+    transition: transform 0.2s;
+}
+
+.brown-rectangle {
+    width: 70%; /* Width of the rectangle */
+    height: 30px; /* Height of the rectangle */
+    background-color: #b78858 ;
+    margin: 0 auto;
+}
+
+.book-link:hover {
+    transform: scale(1.05);
+background: linear-gradient(to right, #2C3E50 5%, #3B5998 50%, #2C3E50 95%);
+}
+
+
+
